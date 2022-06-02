@@ -16,24 +16,24 @@ function diferenca() {
         if (sex[0].checked) {
             genero = 'Homem'
             if (total >= 0 && total < 10) {
-                img.setAttribute('src', 'crianca-homem.jpg')
+                img.setAttribute('src', 'img/crianca-homem.jpg')
             } else if (total < 21) {
-                img.setAttribute('src', 'jovem-homem.jpg')
+                img.setAttribute('src', 'img/jovem-homem.jpg')
             } else if (total < 50) {
-                img.setAttribute('src', 'adulto-homem.jpg')
+                img.setAttribute('src', 'img/adulto-homem.jpg')
             } else {
-                img.setAttribute('src', 'idoso-homem.jpg')
+                img.setAttribute('src', 'img/idoso-homem.jpg')
             }
         } else if (sex[1].checked) {
             genero = "Mulher"
             if (total >= 0 && total < 10) {
-                img.setAttribute('src', 'crianca-mulher.jpg')
+                img.setAttribute('src', 'img/crianca-mulher.jpg')
             } else if (total < 21) {
-                img.setAttribute('src', 'jovem-mulher.jpg')
+                img.setAttribute('src', 'img/jovem-mulher.jpg')
             } else if (total < 50) {
-                img.setAttribute('src', 'adulta-mulher.jpg')
+                img.setAttribute('src', 'img/adulta-mulher.jpg')
             } else {
-                img.setAttribute('src', 'idosa-mulher.jpg')
+                img.setAttribute('src', 'img/idosa-mulher.jpg')
             } 
         }
         document.getElementById('result').innerHTML = `Detectamos ${genero} com ${total} anos`
